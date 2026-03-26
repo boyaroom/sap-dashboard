@@ -45,7 +45,6 @@ else:
             fig1 = px.bar(product_sales, x="产品", y="销售额", color="产品")
             st.plotly_chart(fig1, use_container_width=True)
 
-    
     with col_right:
         st.subheader("👤 销售员业绩")
         if "销售员" in df.columns:
