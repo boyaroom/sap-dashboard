@@ -10,7 +10,7 @@ st.title("📊 销售数据 Dashboard - Excel 实时版")
 # 读取 Excel 底稿
 @st.cache_data(ttl=60)  # 每60秒自动刷新
 def load_data():
-    excel_path = "c:/Python_Excel/sales_data.xlsx"
+    excel_path = "sales_data.xlsx"
     if not os.path.exists(excel_path):
         return None
     df = pd.read_excel(excel_path)
